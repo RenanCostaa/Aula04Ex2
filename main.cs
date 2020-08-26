@@ -16,7 +16,7 @@ quantidade, calculando e mostrando o valor a pagar. Não será necessário exibi
 
 class MainClass {
 
-  public static double lancheBom(string item, double quant){
+  public static double lancheBom(string item, int quant){
     double valor=0;
 
     switch (item){
@@ -57,6 +57,14 @@ class MainClass {
     Console.WriteLine("---------------------------------");
   }
   public static void Main () {
+    string item;
+    int quant;
+    printaCardapio();
+    Console.Write("Insira o codigo do lanche escolhido >> ");
+    item=Console.ReadLine();
+    Console.Write("Agora a quantidade desejada >> ");
+    quant=int.Parse(Console.ReadLine());
 
+    Console.WriteLine(lancheBom(item,quant));
   }
 }
