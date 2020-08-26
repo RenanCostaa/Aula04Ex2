@@ -59,12 +59,16 @@ class MainClass {
   public static void Main () {
     string item;
     int quant;
+    double preco;
+
     printaCardapio();
     Console.Write("Insira o codigo do lanche escolhido >> ");
     item=Console.ReadLine();
     Console.Write("Agora a quantidade desejada >> ");
     quant=int.Parse(Console.ReadLine());
 
-    Console.WriteLine(lancheBom(item,quant));
+    preco=lancheBom(item,quant);
+    Console.WriteLine("O preço final do seu pedido foi de R${0}0 !",preco);
+    Console.Write("Agradeçemos a Preferência !!!");
   }
 }
