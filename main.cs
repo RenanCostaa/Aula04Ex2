@@ -46,7 +46,16 @@ class MainClass {
     }
     return valor;
   }
-
+  public static void printaCardapio(){
+    Console.WriteLine("---------------------------------");
+    Console.WriteLine("100  Cachorro quente   R$ 1,70");
+    Console.WriteLine("101   Bauru Simples    R$ 2,30");
+    Console.WriteLine("102   Bauru com ovo    R$ 2,60");
+    Console.WriteLine("103   Hamburguer       R$ 2,40");
+    Console.WriteLine("104   Cheeseburguer    R$ 2,50");
+    Console.WriteLine("105   Refrigerante     R$ 1,00");
+    Console.WriteLine("---------------------------------");
+  }
   public static void Main () {
 
   }
