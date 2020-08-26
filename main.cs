@@ -47,6 +47,9 @@ class MainClass {
     return valor;
   }
   public static void printaCardapio(){
+    Console.WriteLine("Lanchonete Virtual do Tio Marlon");
+    Console.WriteLine("");
+    Console.WriteLine("Cod ---- Descrição ---- Preço R$");
     Console.WriteLine("---------------------------------");
     Console.WriteLine("100  Cachorro quente   R$ 1,70");
     Console.WriteLine("101   Bauru Simples    R$ 2,30");
@@ -69,6 +72,6 @@ class MainClass {
 
     preco=lancheBom(item,quant);
     Console.WriteLine("O preço final do seu pedido foi de R${0}0 !",preco);
-    Console.Write("Agradeçemos a Preferência !!!");
+    Console.Write("Agradecemos a Preferência !!!");
   }
 }
